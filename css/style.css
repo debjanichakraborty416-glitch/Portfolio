@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul{padding: 0; margin:0; list-style-type: none;}
+
+a{color:inherit; text-decoration: none;}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  font-weight: 800;
+
+}
+
+
+:focus{outline: none; border:none;}
+body{
+  font-size: 18px;
+  line-height: 28px;
+  color: #0D1338;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.maindiv{
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.img-fluid{
+  max-width: 100%;
+}
+.img-res{
+  max-width: 100%;
+  width: 100%
+}
+
+
+.banner {
+    background: url(../images/coding_banner.jpg);
+    background-size: cover;
+    color: #fff;
+    background-position: bottom center;
+    position: relative;
+}
+.banner:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(2 5 22 / 0.7);
+    top: 0;
+    left: 0;
+}
+.top-header {
+    justify-content: space-between;
+    position: relative;
+    padding-top: 15px;
+}
+.next-header {
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 250px;
+    position: relative;
+}
+.next-header h1{
+    width: 100%;
+    font-size: 42px;
+    line-height: 52px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+.next-header h2{
+    width: 100%;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+}
+.next-header p {
+  width: 100%;
+  font-size: 20px;
+  line-height: 40px;
+}
+.next-header span.line1 {
+    width: 350px;
+    height: 1px;
+    background: rgb(255 255 255 / 0.5);
+    margin-top: 10px;
+}
+.skillset {
+    margin-top: -100px;
+    z-index: 1;
+    position: relative;
+}
+.skillset .row1 {
+    justify-content: space-between;
+    box-shadow: 10px 7px 74px rgba(0,0,0,.11);
+}
+.skillset .row1 {
+    justify-content: space-between;
+}
+.skillset .common {
+    width: 50%;
+    background: #f7f7f7;
+}
+.common.gray {
+    background: #f1f1f1;
+}
+.skillset .wrap {
+    padding: 50px;
+}
+.skillset h2 {
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.skillset span.line {
+    width: 150px;
+    height: 2px;
+    background: #0d1338;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+}
+.skillset .head {
+    margin-bottom: 20px;
+}
+.skillset p {
+    margin-bottom: 10px;
+}
+.skillset .fa {
+    color: #048231;
+    padding-right: 6px;
+}
+
+.portfolio {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+.portfolio h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 28px;
+    line-height: 38px;
+}
+.portfolio .line {
+    width: 100px;
+    height: 2px;
+    background: #0d1338;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+}
+
+
+/*----------mixin--------------*/
+#portfolio .mix {
+  display: none;
+}
+.mix image {
+  
+}
+/*-------------*/
+.custom_portfolio {
+    margin-top: 50px;
+}
+
+.custom_portfolio #filter-list {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.custom_portfolio .active {
+    background-color: #b1023b !important;
+}   
+
+.custom_portfolio .waves-effect { text-transform: capitalize; margin-bottom: 15px;}
+.custom_portfolio #portfolio {
+    text-align: center;
+}
+.Infographic .info-img {
+    height: 300px;
+    padding: 0 15px 15px 15px;
+}
+
+.custom_portfolio li.Webpage {
+
+}
+.Webpage .info-img1 {
+   
+}
+
+.Webpage .wrap {
+    height: 280px;
+    overflow: hidden;
+    padding: 0 15px 15px 15px;
+}
+.custom_portfolio a.c_link {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    background: #0d1338;
+    margin: 15px 15px;
+    border-radius: 5px;
+    display: block;
+      -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+
+}
+.custom_portfolio a.c_link:hover {
+  background: #b1023b;
+}
+
+.Webpage .info-img {
+    height: 300px;
+    padding: 0 15px 15px 15px;
+}
+.Prototyping .info-img1 {
+    height: 350px;
+    padding: 0 10px 15px 10px;
+}
+
+
+
+
+
+/*------------modal css-----------------*/
+.modalContainer {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 3% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 65%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+/*------------modal css end-----------------*/
+
+.cta-zone{
+  background: url(../images/coding_banner.jpg);
+  background-size: cover;
+  color: #fff;
+  background-position: bottom center;
+  position: relative;
+  padding: 30px 0 0 0;
+}
+
+.cta-zone:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(2 5 22 / 90%);
+    top: 0;
+    left: 0;
+}
+.cta-zone .maindiv{
+  position: relative;
+}
+.footer {
+    background: #00020c;
+    color: #a3a3a3;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.cta-zone p {
+    margin-bottom: 15px;
+}
+.cta-zone .row1 {
+    justify-content: space-between;
+    align-items: center;
+}
+.cta-zone .common {
+    width: 37%;
+}
+.cta-zone .common:nth-of-type(1) {
+    width: 58%;
+}
+.profile {
+    line-height: 0;
+    height: 418px;
+    overflow: hidden;
+}
+.cta-zone h3 {
+    margin-bottom: 15px;
+}
+.skill-list li {
+    display: flex;
+    font-weight: 600;
+    padding: 5px;
+}
+.skill-list li img {
+    margin-right: 15px;
+}
+.linkedin-link{margin-top: 30px;}
+.linkedin-link p {
+    display: inline-flex;
+}
+.linkedin-link p a{margin-left: 15px;}
+
+@media screen and (max-width:814px) {
+  .profile{height: 321px;}
+}
+
+@media screen and (max-width:767px) {
+  .skillset .common {
+    width: 100%;
+  }
+  .cta-zone .common {
+    width: 100%;
+  }
+  .cta-zone .common:nth-of-type(1) {
+    width: 100%;
+  }
+  .profile {
+    display: none;
+  }
+  .cta-zone {
+    padding: 30px;
+  }
+
+}
+
+
+@media screen and (max-width:575px) {
+  .top-header {
+    justify-content: center;
+  }
+  .top-header span {
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .skillset .wrap {
+    padding: 20px;
+  }
+  .Webpage .info-img, .Infographic .info-img, .Webpage .info-img1 {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}
